@@ -1,0 +1,26 @@
+.user-avatar-wrapper {
+    width: 100%;
+}
+
+.user-avatar {
+    max-width: 100%;
+    fill: #fff;
+    stroke: #fff;
+}
+
+.change-avatar {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.change-avatar input[type="file"] {
+    display: none;
+}
+
+.change-avatar label {
+    margin: 0;
+    cursor: pointer;
+}

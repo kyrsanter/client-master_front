@@ -1,0 +1,10 @@
+.profile-adress-wrapper {
+    display: flex;
+}
+
+.profile-config {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 30px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px #000;
+}

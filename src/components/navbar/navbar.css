@@ -1,0 +1,91 @@
+.navig {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.white-border-btn {
+    margin-left: 2rem;
+    display: flex;
+}
+
+.white-border-btn a, .exit-btn {
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.exit-btn {
+    margin-right: 2rem;
+}
+
+.drop-parent {
+    position: relative;
+}
+
+.drop-parent:before {
+    left: 10px;
+    top: 50%;
+    content: '';
+    transform: translateY(-7px);
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 5px solid transparent;
+    transition: all .3s ease;
+}
+
+
+.droped-child {
+    top: 0;
+    position: absolute;
+    z-index: -999;
+    opacity: 0;
+    transition: all .3s ease;
+    list-style: none;
+}
+
+.drop-parent:hover > .droped-child {
+    top: 100%;
+    z-index: 9;
+    opacity: 1;
+    padding: 0;
+}
+
+.drop-parent:hover::before {
+    transform: rotate(180deg) translateY(10px)
+}
+
+.droped-child {
+    width: 100%;
+}
+
+.droped-child li {
+    transition: all .3s ease;
+}
+
+.droped-child li a {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.droped-child li:hover {
+    transform: translateX(10px);
+}

@@ -1,0 +1,98 @@
+.people-list-item {
+    display: flex;
+    padding: 10px;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 150px;
+    align-items: center;
+    box-shadow: 0 0 20px 0px #000;
+}
+
+.people-list-item a img {
+    max-width: 100px;
+}
+
+.people-list-item a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.person-details {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.person-details .person-contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.person-contacts .person-name{
+    color: #000;
+    font-weight: bold;
+}
+
+.person-details a {
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+.roles {
+    margin-left: 20px;
+}
+
+.roles .roles-item {
+    position: relative;
+}
+
+.roles .roles-item span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #33333380;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 76px;
+    top: 9px;
+}
+
+.roles .roles-item span:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 2px;
+    background: #33333380;
+    transform: rotate(90deg) translate(-6px, -13px);
+}
+
+.roles .roles-item span.green {
+    background: #93FF05;
+    width: 22px;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.roles .roles-item span.green:before {
+    background: #93FF05;
+    width: 14px;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.roles .roles-item p {
+    color: #000;
+    font-weight: bold;
+}

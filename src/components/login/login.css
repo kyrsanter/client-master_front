@@ -1,0 +1,15 @@
+.button-wrapper button {
+    border: 1px solid #fff;
+    background: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.login-form, .reg-form {
+    background-color: rgba(255, 255, 255, .2);
+    padding: 30px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px #000;
+}

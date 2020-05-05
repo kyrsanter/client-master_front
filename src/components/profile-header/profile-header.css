@@ -1,0 +1,23 @@
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px #000;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    text-align: left;
+}
+
+.profile-name h3{
+    margin: 0;
+    font-weight: bold;
+}
+
+.profile-phone {
+    text-align: right;
+}

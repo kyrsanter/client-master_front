@@ -1,0 +1,93 @@
+.input-field input {
+    border: 1px solid #fff;
+    padding: 15px;
+    background: transparent;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #652400;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field label {
+    margin: 0px;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 22px;
+    color: orangered;
+    font-weight: bold;
+    transition: all .3s ease;
+    font-size: 1.2rem;
+}
+
+.input-field input:focus + label {
+    top: -1.7rem;
+}
+
+.input-field input[type="text"]:valid + label {
+     display: none;
+ }
+
+.input-field input[type="password"]:valid + label {
+    display: none;
+}
+
+.info-block {
+    background-color: rgba(255, 255, 255, .6);
+    color: #000;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 20px;
+    display: none;
+    font-weight: bold;
+}
+
+.roles-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.roles-wrapper .input-field{
+    width: 50%;
+}
+
+.roles-wrapper .input-field input {
+    display: none;
+}
+
+.roles-wrapper .input-field label {
+    position: static;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.ch-wrap {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.ch-wrap span {
+    border-radius: 5px;
+    width: 22px;
+    height: 22px;
+    background: red;
+    display: none;
+}
+
+.roles-wrapper .input-field input:checked ~ label .ch-wrap span{
+    display: block;
+}

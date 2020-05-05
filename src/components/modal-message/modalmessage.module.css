@@ -1,0 +1,22 @@
+.modalWrap {
+    position: absolute;
+    padding: 15px 20px 15px 700px;
+    transform: translate(-1000px, 100px);
+    transition: all .5s ease;
+    margin-bottom: 15px;
+    z-index: 999;
+}
+
+.modalWrap.message {
+    background: #fafafa;
+    color: #000;
+    font-weight: bold;
+    transform: translate(-600px, 100px);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.modalWrap.message ul li {
+    width: 250px;
+    margin-bottom: 15px;
+}

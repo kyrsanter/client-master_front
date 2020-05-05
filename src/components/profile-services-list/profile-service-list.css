@@ -1,0 +1,23 @@
+.profile-service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-service-list li {
+    margin-bottom: 15px;
+}
+
+.profile-service-list li .input-field input[type='checkbox'] {
+    display: none;
+}
+
+.profile-service-list li .input-field input[type='checkbox']:checked ~ label .ch-wrap span{
+    display: block;
+}
+
+
+.profile-service-list li .input-field label {
+    display: flex;
+    position: static;
+}
